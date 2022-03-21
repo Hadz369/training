@@ -1,0 +1,17 @@
+curl http://localhost:3001/
+
+curl -X POST -H "Content-Type: application/json" -d "{ \"title\": \"Garlic Bread\", \"price\": 5.5 }" http://localhost:3001 
+
+curl -X PUT -H "Content-Type: application/json" -d "{ \"price\": 11.5 }" http://localhost:3001/6235023fcac04541fbd80309 
+
+curl -X DELETE -H "Content-Type: application/json" http://localhost:3001/6235023fcac04541fbd80309
+
+
+
+Tokens used in the following examples are taken from the API test page on auth0
+
+curl -X POST -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ii0zS3Q0RThEQndiRnpIZ05mcndUYiJ9.eyJpc3MiOiJodHRwczovL2Rldi05LS1oYTczMy51cy5hdXRoMC5jb20vIiwic3ViIjoiV3pDSXJ4bU1IWEtwYmJ0bDUxNm1XZUJDcDZjSlZBcmVAY2xpZW50cyIsImF1ZCI6Imh0dHA6Ly9leHByZXNzYXBpZGVtbyIsImlhdCI6MTY0NzY0MjMyMiwiZXhwIjoxNjQ3NzI4NzIyLCJhenAiOiJXekNJcnhtTUhYS3BiYnRsNTE2bVdlQkNwNmNKVkFyZSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.WV0-lJuDfs16ebelndSLEMZU9pz_xNDKPNF8pVV239PLe0EwIPLkymL1c-iYWUouxvdn9LYfFMrqQi6V43jCJxbpPj-OpGUxiQJGDwej4t3OqUVjp0eLbgsTeJjizQn1h97S08-3SLXktCC_VdSppFixplqEfXe5_uQr3pF1eR-kCsjph54EszfVENP2zSB6eYYbOdncC4lvAnI5MSJqBdbegJIHkky5fNfJGMCq2PsbQzZDe2FtUS8SB6SCyfvB3WU_dnSxv83Kr93ssw_v8QtARCT1JeJ_KRZ2EY5RF8uuMnZ050Ubb6hcQN7IKfZk9qwZCAwBxjvEP59HquIcSw" -H "Content-Type: application/json" -d "{ \"title\": \"Garlic Bread\", \"price\": 5.5 }" http://localhost:3001
+
+curl -X PUT -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ii0zS3Q0RThEQndiRnpIZ05mcndUYiJ9.eyJpc3MiOiJodHRwczovL2Rldi05LS1oYTczMy51cy5hdXRoMC5jb20vIiwic3ViIjoiV3pDSXJ4bU1IWEtwYmJ0bDUxNm1XZUJDcDZjSlZBcmVAY2xpZW50cyIsImF1ZCI6Imh0dHA6Ly9leHByZXNzYXBpZGVtbyIsImlhdCI6MTY0NzY0MjMyMiwiZXhwIjoxNjQ3NzI4NzIyLCJhenAiOiJXekNJcnhtTUhYS3BiYnRsNTE2bVdlQkNwNmNKVkFyZSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.WV0-lJuDfs16ebelndSLEMZU9pz_xNDKPNF8pVV239PLe0EwIPLkymL1c-iYWUouxvdn9LYfFMrqQi6V43jCJxbpPj-OpGUxiQJGDwej4t3OqUVjp0eLbgsTeJjizQn1h97S08-3SLXktCC_VdSppFixplqEfXe5_uQr3pF1eR-kCsjph54EszfVENP2zSB6eYYbOdncC4lvAnI5MSJqBdbegJIHkky5fNfJGMCq2PsbQzZDe2FtUS8SB6SCyfvB3WU_dnSxv83Kr93ssw_v8QtARCT1JeJ_KRZ2EY5RF8uuMnZ050Ubb6hcQN7IKfZk9qwZCAwBxjvEP59HquIcSw" -H "Content-Type: application/json" -d "{ \"price\": 11.5 }" http://localhost:3001/6235023fcac04541fbd80309 
+
+curl -X DELETE -H "Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCIsImtpZCI6Ii0zS3Q0RThEQndiRnpIZ05mcndUYiJ9.eyJpc3MiOiJodHRwczovL2Rldi05LS1oYTczMy51cy5hdXRoMC5jb20vIiwic3ViIjoiV3pDSXJ4bU1IWEtwYmJ0bDUxNm1XZUJDcDZjSlZBcmVAY2xpZW50cyIsImF1ZCI6Imh0dHA6Ly9leHByZXNzYXBpZGVtbyIsImlhdCI6MTY0NzY0MjMyMiwiZXhwIjoxNjQ3NzI4NzIyLCJhenAiOiJXekNJcnhtTUhYS3BiYnRsNTE2bVdlQkNwNmNKVkFyZSIsImd0eSI6ImNsaWVudC1jcmVkZW50aWFscyJ9.WV0-lJuDfs16ebelndSLEMZU9pz_xNDKPNF8pVV239PLe0EwIPLkymL1c-iYWUouxvdn9LYfFMrqQi6V43jCJxbpPj-OpGUxiQJGDwej4t3OqUVjp0eLbgsTeJjizQn1h97S08-3SLXktCC_VdSppFixplqEfXe5_uQr3pF1eR-kCsjph54EszfVENP2zSB6eYYbOdncC4lvAnI5MSJqBdbegJIHkky5fNfJGMCq2PsbQzZDe2FtUS8SB6SCyfvB3WU_dnSxv83Kr93ssw_v8QtARCT1JeJ_KRZ2EY5RF8uuMnZ050Ubb6hcQN7IKfZk9qwZCAwBxjvEP59HquIcSw" -H "Content-Type: application/json" http://localhost:3001/623527fd5c5915a950f94917
